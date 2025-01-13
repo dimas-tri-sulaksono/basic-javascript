@@ -249,10 +249,11 @@ console.log("\n=================================================");
  */
 console.log("\nsoal 10 :");
 const dataBilanganBulat = [2, 4, 6, 8, 10];
-
+let temp = 0;
 for (let i of dataBilanganBulat) {
-  
+  temp += i;
 }
+console.log(temp / dataBilanganBulat.length);
 
 console.log("\n=================================================");
 
@@ -267,9 +268,22 @@ let string3 = "JAVaScRipT";
 console.log("\n=================================================");
 
 /** soal 12 : for loop
- * buat function untukmencari nilai tertinggi dari sebuah array
+ * buat function untuk mencari nilai tertinggi dari sebuah array
  */
 console.log("\nsoal 12 :");
 const nilaiTertinggi = [1, 34, 21, 54, 6567, 98764, 23, 453];
+
+const bubbleSort = (array) => {
+  const arr = Array.from(array); // avoid side effects
+  for (let i = 1; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      }
+    }
+  }
+  return arr[arr.length - 1];
+};
+console.log(bubbleSort(nilaiTertinggi));
 
 console.log("\n=================================================");
