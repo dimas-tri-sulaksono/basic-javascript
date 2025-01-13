@@ -265,6 +265,19 @@ let string1 = "Hello World";
 let string2 = "Kiw, Gimana Kabarnya?";
 let string3 = "JAVaScRipT";
 
+function hitungHurufKapital(kata) {
+  let hitung = 0;
+  for (let i = 0; i < kata.length; i++) {
+    if (kata[i] >= "A" && kata[i] <= "Z") {
+      hitung++;
+    }
+  }
+  return hitung;
+}
+console.log(string1, ":", hitungHurufKapital(string1), "huruf kapital");
+console.log(string2, ":", hitungHurufKapital(string2), "huruf kapital");
+console.log(string3, ":", hitungHurufKapital(string3), "huruf kapital");
+
 console.log("\n=================================================");
 
 /** soal 12 : for loop
@@ -284,6 +297,6 @@ const bubbleSort = (array) => {
   }
   return arr[arr.length - 1];
 };
-console.log(bubbleSort(nilaiTertinggi));
+console.log("nilai tertinggi :", bubbleSort(nilaiTertinggi));
 
 console.log("\n=================================================");
