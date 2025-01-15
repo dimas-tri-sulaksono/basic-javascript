@@ -56,11 +56,12 @@ console.log("\n=================================================");
  */
 console.log("\nsoal 4 :");
 
-let hari = 5;
+let hari = 5; // nilai input yang akan dikirim ke switch case
+
 switch (hari) {
   case 1: {
     console.log("monday");
-    break;
+    break; // menghentikan eksekusi ketika kondisi terpenuhi
   }
   case 2: {
     console.log("tuesday");
@@ -87,19 +88,19 @@ switch (hari) {
     break;
   }
 
-  default:
+  default: // kondisi jika semua switch tidak terpenuhi
     console.log("input tidak valid");
     break;
 }
 
 console.log("\n=================================================");
 
-/* soal 5 : buat logic if yang menentukan status kelulusan orang berdasarkan nilai yang didapat
-jika nilai lebih dari atau sama dengan 80, maka statusnya "anda lulus dengan sangat baik",
-jika nilai lebih dari atau sama dengan 70, dan kurang dari 80, maka statusnya "lulus dengan baik",
-jika nilai lebih dari atau sama dengan 60, dan kurang dari 70, maka statusnya "lulus",
-jika nilai kurang dari 60, maka statusnya "tidak lulus"
-*/
+/** soal 5 : buat logic if yang menentukan status kelulusan orang berdasarkan nilai yang didapat
+ * jika nilai lebih dari atau sama dengan 80, maka statusnya "anda lulus dengan sangat baik",
+ * jika nilai lebih dari atau sama dengan 70, dan kurang dari 80, maka statusnya "lulus dengan baik",
+ * jika nilai lebih dari atau sama dengan 60, dan kurang dari 70, maka statusnya "lulus",
+ * jika nilai kurang dari 60, maka statusnya "tidak lulus"
+ */
 
 console.log("\nsoal 5 :");
 
@@ -240,6 +241,12 @@ for (let i = 2; i <= n; i++) {
 
   if (count == 2) console.log(i);
   count = 0;
+}
+
+for (let i = 2; i <= 25; i++) {
+  if (i % 2 == 0) {
+    console.log("Coba 9 :", i);
+  }
 }
 
 console.log("\n=================================================");
