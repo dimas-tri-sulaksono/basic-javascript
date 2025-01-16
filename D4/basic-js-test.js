@@ -202,8 +202,14 @@ const soal_1 = carProducts.filter((item) => {
 let hargaTertinggi = Math.max(...soal_1.map((item) => item.price));
 let hargaTerendah = Math.min(...soal_1.map((item) => item.price));
 
+let car1 = soal_1.find((car) => car.price == hargaTertinggi);
+console.log("mobil termahal :\n", car1);
+
+let car2 = soal_1.find((car) => car.price == hargaTerendah);
+console.log("\nmobil termurah :\n", car2);
+
 // console.log("harga mobil tertinggi :", hargaTertinggi);
-// console.log("harga mobil terendah :", hargaTerendah); // ada yang null, tanya apakah yang null termasuk kriteria pencarian!
+// console.log("harga mobil terendah :", hargaTerendah);
 
 /** 2 SELESAI ===============================================================================================
  * filter dan tampilkan data mobil dengan tag "Promo"
@@ -213,7 +219,7 @@ console.log("\nsoal 2 : SELESAI");
 let filterValue = "Promo";
 let filterResult = carProducts.filter((item) => item.tag.includes(filterValue));
 
-// console.log(filterResult);
+console.log(filterResult);
 
 /** 3 SELESAI ===============================================================================================
  * Urutkan dan tampilkan mobil dari harga tertinggi ke rendah, jika ada harga yang null, tampilkan diurutan terakhir
@@ -222,7 +228,7 @@ console.log("\nsoal 3 : SELESAI");
 carProducts.sort((a, b) => a.price - b.price);
 carProducts.reverse();
 carProducts.forEach((e) => {
-  //console.log(`ID mobil (${e.id}) harga : ${e.price}`);
+  console.log(`ID mobil (${e.id}) harga : ${e.price}`);
 });
 
 /** 4
@@ -240,7 +246,7 @@ const soal_4 = carProducts.reduce((acc, t) => {
     },
   };
 }, {});
-// console.log(soal_4);
+console.log(soal_4);
 
 /** 5 SELESAI ===============================================================================================
  * buat fungsi yang membaca data dari file JSON carProducts.json secara ASYNCHRONOUS,
@@ -377,7 +383,10 @@ function soal_8b(carProducts) {
   return carMaxVar;
 }
 
-console.log("mobil dengan varian terbanyak : ", soal_8b(carProducts));
+console.log(
+  "\nsoal 8 :\nmobil dengan varian terbanyak : ",
+  soal_8b(carProducts)
+);
 
 /** 9 ===============================================================================================
  * buat fungsi untuk mencari mobil yang tidak preorder
@@ -386,7 +395,7 @@ console.log("\nsoal 9 : SELESAI");
 const soal_9 = carProducts.filter((item) => {
   return item.isPreorder === false;
 });
-// console.log(soal_9);
+console.log(soal_9);
 
 /** 10
  * buat looping untuk menampilkan SEGITIGA SAMA KAKI
@@ -442,14 +451,15 @@ const newEmp = {
 employee.push(newEmp);
 
 // read
-// console.log(employee);
+console.log(employee);
+// employee.forEach;
 
 // update
 employee[0].nama = "Dimaz";
-// console.log(employee);
+console.log("\n\nsetelah update :\n", employee);
 
 // delete
 // pop
 let idTerakhir = employee.pop();
-// console.log("pop : ", idTerakhir);
-// console.log("popped array : ", employee);
+console.log("\n\npop : ", idTerakhir);
+console.log("\npopped array : ", employee);
