@@ -1,0 +1,74 @@
+[
+     {
+          "id": 1,
+          "nama": "Danu",
+          "age": 25,
+          "jobdesk": [
+               {
+                    "title": "frontend",
+                    "salary": 12000000
+               }
+          ],
+          "hobby": [
+               "membaca",
+               "menulis"
+          ]
+     },
+     {
+          "id": 2,
+          "nama": "Dani",
+          "age": 26,
+          "jobdesk": [
+               {
+                    "title": "frontend",
+                    "salary": 2000000
+               }
+          ],
+          "hobby": [
+               "membaca",
+               "menulis"
+          ]
+     },
+     {
+          "id": 3,
+          "nama": "Dina",
+          "age": 27,
+          "jobdesk": [
+               {
+                    "title": "backend",
+                    "salary": 3000000
+               }
+          ],
+          "hobby": [
+               "membaca"
+          ]
+     },
+     {
+          "id": 4,
+          "nama": "Deni",
+          "age": 26,
+          "jobdesk": [
+               {
+                    "title": "backend",
+                    "salary": 4000000
+               }
+          ],
+          "hobby": [
+               "membaca"
+          ]
+     },
+     {
+          "id": 5,
+          "nama": "Dian",
+          "age": 26,
+          "jobdesk": [
+               {
+                    "title": "frontend",
+                    "salary": 8000000
+               }
+          ],
+          "hobby": [
+               "membaca"
+          ]
+     }
+]
