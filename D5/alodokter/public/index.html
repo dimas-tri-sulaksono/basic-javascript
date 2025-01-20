@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!-- favico -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/fav.ico">
+
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="mx-auto">
+
+    <!-- navbar -->
+    <div class="top-navbar bg-transparent w-full h-20 fixed z-[100] text-sm py-4 px-8  top-0 left-1/2 transform -translate-x-1/2">
+        <div class="container-fluid w-[1238px] mx-auto p-0 block">
+            <div class="top-navbar-inner p-4 flex justify-between items-center">
+                <div class="top-navbar-left flex justify-between gap-0 w-[435px] h-[49px]">
+                    <div class="navbar-logo py-[10px]">
+                        <a href="#" id="homeLogo">
+                            <img class="w-[113px] h-[13px] mr-[7px]" src="../assets/logo.svg" alt="logo-home">
+                        </a>
+                    </div>
+                    <div class="searchbar mr-4">
+                        <input class="bg-transparent border rounded-md placeholder-white h-11 w-15 pl-9 pt-1 pb-1 pr-1"  type="search" name="search" id="search" placeholder="Cari di Alodokter">
+                    </div>
+                </div>
+                <div class="top-navbar-right w-[830px] flex justify-between items-center">
+                    <nav class="flex text-center gap-7 text-white text-[14px] font-normal">
+                        <a href="#">Info Kesehatan</a>
+                        <a href="#">Chat Dokter</a>
+                        <a href="#">Langganan</a>
+                        <a href="#">Aloshop</a>
+                        <a href="#">Alochoice</a>
+                    </nav>
+                    <div class="navbar-button flex gap-2">
+                        <div class="login-button">
+                            <div class="login w-[160px] px-[15px] py-[11px] text-[14px] text-[#3570D2] font-bold rounded-xl border-white bg-white">Masuk / Daftar</div>
+                        </div>
+                        <div class="download-button px-[15px] py-[11px] text-[14px] text-white font-bold rounded-xl bg-transparent border-white border-[1px]">
+                            <a href="#">Download Applikasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end navbar -->
+
+<!-- content -->
+<div id="content" class="content">
+    <div class="hero bg-[url('../assets/bg-banner.jpg')] text-[16px] font-normal">
+        <div class="container-hero text-white pt-[82px] relative mx-auto w-[1112px] min-h-[612px]">
+            <div class="hero-content-inner  pt-[91px] pb-[113px]">
+                <img src="../assets/doctor.png" alt="doctor" class="h-[495px] absolute bottom-0 -right-10">
+                <div class="hero banner content">
+                    <h1 class="font-alo font-bold text-[36px] mb-[12px]">Layanan Cepat dan Tepat</h1>
+                    <p class="font-alo font-normal text-[28px] mb-[52px] ">Layanan Booking dan Chat Dokter Terbaik di Indonesia</p>
+                </div>
+                <div class="hero-menu"></div>
+            </div>
+        </div>
+    </div>
+    <div class="subnav-center flex items-center justify-center mt-[50px]">
+        <div class="container-subnav-center w-[1000px]">
+            <h2 class="text-[30px] text-[#424242] font-bold font-alo">Artikel Kesehatan Terkini untuk Anda</h2>
+            <div class="subnav-menu block mt-[20px] mb-[40px] h-[69px] border-t border-b border-[#dddddd]">
+                <ul class="list-none flex justify-between gap-6 m-0 p-0 text-[16px] text-[#424242] leading-[69px] font-alo font-normal">
+                    <li class="list-item" ><a class="" href="#">Nutrisi</a></li>
+                    <li><a href="#">Diabetes</a></li>
+                    <li><a href="#">Jantung</a></li>
+                    <li><a href="#">Kesehatan Mulut</a></li>
+                    <li><a href="#">Kolesterol Tinggi</a></li>
+                    <li><a href="#">Diet</a></li>
+                    <li><a href="#">Kecantikan</a></li>
+                    <li><a href="#">Kulit</a></li>
+                    <li><a href="#">Kehamilan</a></li>
+                    <li><a href="#">Bayi</a></li>
+                    <li><a href="#">Demam</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-inner">
+        <div class="container w-[1000px] h-[1250px] mx-[405px]">
+            <div class="main-container">
+                <!-- chat -->
+                <a href="#" class="fixed bottom-6 right-9 z-[100] cursor-pointer">
+                    <img src="../assets/chat-now.gif" alt="chat-now" class="w-[202px]">
+                </a>
+            
+
+
+                <!-- trending article -->
+                <div class="trending-article">
+                    <div class="trending-wrapper">
+                        <div class="trending-image">
+                            <a href="#">
+                                <div class="tag-label absolute bg-[#F85B06] rounded-full w-[75.73px] h-[21px] m-[6px] px-[10px] text-white text-[12px] leading-[22px] font-alo">
+                                    Kesehatan
+                                </div>
+                            </a>
+                            <a href="#">
+                                <img class="w-[667px] h-[336px]" src="../assets/obat-diare-ampuh.jpg" alt="obat-diare-ampuh">
+                            </a>
+                        </div>
+                        <div class="trending-content mt-[17px]">
+                            <div>
+                                <a href="#">
+                                    <h3 class="w-[667px] h-[21px] text-[#424242] text-[21px] font-alo font-bold">10 Obat Diare Ampuh</h3>
+                                </a>
+                                <p class="w-[667px] py-[16px] text-[#7f7f7f] font-alo">
+                                    Obat diare efektif menghentikan mencret yang sudah terjadi berkali-kali dan meredakan berbagai keluhan yang menyertainya. Obat ini dapat membuat buang...
+                                </p>
+                                <a href="#" class="text-[#3670D2] text-sm font-alo font-bold">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card post 1 -->
+                <div class="card-post-index mt-5">
+                    <div class="card-post-index-view flex flex-row gap-5">
+                        <div class="card-image">
+                            <div class="card-image-tag absolute bg-[#F85B06] rounded-full h-[25px] m-[6px] px-[8px] py-[2px] text-center text-white text-[10px] leading-[20px] font-alo">
+                                KESEHATAN
+                            </div>
+                            <div class="card-image-bg ">
+                                <img class="rounded-lg" src="../assets/iris-mata-ketahui-bagian-dan-fungsinya.jpg" alt="iris-mata-ketahui-bagian-dan-fungsinya">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <a href="#">
+                                    <h4 class="w-[341px] h-[25px] text-[#424242] text-[19px] font-alo font-bold">Iris Mata, Ketahui Bagian dan Fungsinya</h4>
+                                </a>
+                                <p class="w-[341px] py-[16px] text-[#7f7f7f] font-alo">
+                                    Iris mata adalah bagian berwarna pada mata yang terletak di antara kornea dan lensa mata....
+                                </p>
+                                <a href="#" class="text-[#3670D2] text-sm font-alo font-bold">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card post 2 -->
+                <div class="card-post-index mt-5">
+                    <div class="card-post-index-view flex flex-row gap-5">
+                        <div class="card-image">
+                            <div class="card-image-tag absolute bg-[#F85B06] rounded-full h-[25px] m-[6px] px-[8px] py-[2px] text-center text-white text-[10px] leading-[20px] font-alo">
+                                KESEHATAN
+                            </div>
+                            <div class="card-image-bg ">
+                                <img class="rounded-lg" src="../assets/7-ciri-ciri-depresi-ringan-yang-perlu-dikenali.jpg" alt="7-ciri-ciri-depresi-ringan-yang-perlu-dikenali">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <a href="#">
+                                    <h4 class="w-[341px] text-[#424242] text-[19px] font-alo font-bold">
+                                        7 Ciri-Ciri Depresi Ringan yang Perlu Dikenali
+                                    </h4>
+                                </a>
+                                <p class="w-[341px] py-[9px] text-[#7f7f7f] font-alo">
+                                    Ciri-ciri depresi ringan terkadang bisa sulit dikenali karena kerap dianggap sebagai perubahan mood yang normal....
+                                </p>
+                                <a href="#" class="text-[#3670D2] text-sm font-alo font-bold">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card post 3 -->
+                <div class="card-post-index mt-5">
+                    <div class="card-post-index-view flex flex-row gap-5">
+                        <div class="card-image">
+                            <div class="card-image-tag absolute bg-[#C78F00] rounded-full h-[25px] m-[6px] px-[8px] py-[2px] text-center text-white text-[10px] leading-[20px] font-alo">
+                                HIDUP SEHAT
+                            </div>
+                            <div class="card-image-bg ">
+                                <img class="rounded-lg" src="../assets/9-makanan-untuk-menaikkan-trombosit.jpg" alt="9-makanan-untuk-menaikkan-trombosit">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <a href="#">
+                                    <h4 class="w-[341px] h-[25px] text-[#424242] text-[19px] font-alo font-bold">9 Makanan untuk Menaikkan Trombosit</h4>
+                                </a>
+                                <p class="w-[341px] py-[16px] text-[#7f7f7f] font-alo">
+                                    Makanan untuk menaikkan trombosit cukup beragam, mulai dari daging hingga sayuran. Berbagai makanan ini bisa...
+                                </p>
+                                <a href="#" class="text-[#3670D2] text-sm font-alo font-bold">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<!-- end content -->
+
+<!-- footer -->
+<div id="footer" class="footer bg-[#3570d2] h-auto text-white font-alo">
+    <div class="banner-footer bg-[linear-gradient(189deg,#6d97de,#1c4b9a)] shadow-[inset_25px_-26px_160px_#1c4b9a] h-[155px] pt-[24px] pb-[21px]">
+        <div class="container-footer flex flex-row justify-center gap-5">
+            <img class="w-[237px] -mt-[67px]" src="../assets/chat.png" alt="phone display chat">
+            <div class="text-banner">
+                <div class="text-banner-3 text-[26px] font-alo font-semibold">Chat lebih dari 1.000 dokter di Aplikasi Alodokter!</div>
+                <div class="text-banner-4 text-[24px] font-alo font-normal">Respons Cepat, Jawaban Akurat!</div>
+                <div class="logo-kemenkes flex justify-end -mt-[20px]">
+                    <img class="w-[160px]" src="../assets/kemenkes.png" alt="logo kementrian kesehatan">
+                </div>
+            </div>
+            <div class="downloadApp">
+                <a href="#">
+                    <img class="w-[145px] mb-[10px]" src="../assets/googleplay.png" alt="google play">
+                </a>
+                <a href="#">
+                    <img class="w-[145px]" src="../assets/appstore.png" alt="google play">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-footer w-[1080px] mx-auto font-alo">
+        <div class="footer-inner pt-[36pt]">
+            <div class="footer-top flex flex-row border-b border-[#ffffff]">
+                <div class="footer-data-item-about-us inline-block w-[330px] align-top text-[18px] mb-[30px]">
+                    <h4 class="m-0 text-[20px] font-bold">Alodokter</h4>
+                    <ul class="p-0 my-[14px] leading-8">
+                        <li>
+                            <a href="#">Tentang Kami</a></li>
+                        <li>
+                            <a href="https://www.kalibrr.id/c/alodokter/jobs">Karier</a></li>
+                        <li>
+                            <a href="#">Hubungi Kami</a></li>
+                        <li>
+                            <a href="#">Tim Editorial</a></li>
+                        <li>
+                          <a href="#">Langganan</a></li>
+                        <li>
+                          <a href="https://www.aloproteksi.com/">Aloproteksi Corporate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data-item-contact-us inline-block w-[330px] align-top text-[18px] mb-[30px]"">
+                    <h4 class="m-0 text-[20px] font-bold">Lainnya</h4>
+                    <ul class="p-0 my-[14px] leading-8">
+                        <li>
+                          <a href="#">Syarat &amp; Ketentuan</a></li>
+                        <li>
+                            <a href="#">Privasi</a></li>
+                        <li>
+                            <a href="#">Iklan</a></li>
+                        <li>
+                            <a href="#">Gabung di Tim Dokter</a></li>
+                        <li>
+                            <a href="#">Daftarkan Rumah Sakit Anda</a></li>
+                      </ul>
+                </div>
+                <div class="footer-data-item-social-medi inline-block w-[330px] align-top text-[18px] mb-[30px]">
+                    <h4 class="m-0 text-[20px] font-bold">Media Sosial</h4>
+                    <div class="footer-row-social-media-list flex justify-between max-w-[260px] my-[14px] mb-[60px]">
+                        <a href="#" class="mr-[20px]">
+                            <img class="w-[35px]" src="../assets/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="mr-[20px]">
+                            <img class="w-[35px]" src="../assets/twitter.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="mr-[20px]">
+                            <img class="w-[35px]" src="../assets/linkedin.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="mr-[20px]">
+                            <img class="w-[35px]" src="../assets/instagram.svg" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img class="w-[35px]" src="../assets/youtube.svg" alt="facebook">
+                        </a>
+                    </div>
+                    <p class="mt-[38px] mb-[10px] text-[16px] font-bold">
+                        Bagian dari Alodokter
+                    </p>
+                    <div class="alo-group block">
+                        <span class="mr-[23px]">
+                            <a href="#" class="mr-[25px]">alomedika.com</a>
+                        </span>
+                        <span>
+                            <a href="#">pobpad.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright py-4">
+                <p>Hak Cipta © 2025 Alodokter</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end footer -->
+
+</body>
+</html>
