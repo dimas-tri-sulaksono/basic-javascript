@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!-- favico -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/fav.ico">
+
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="mx-auto">
+
+    <!-- navbar -->
+    <div class="top-navbar bg-white border-b border-[#dadee4] w-full fixed px-8 py-[7px] top-0 left-1/2 z-[100]   text-sm transform -translate-x-1/2">
+        <div class="container-fluid w-[1340px] mx-auto p-0 block">
+            <div class="top-navbar-inner flex justify-between items-center">
+                <div class="top-navbar-left flex justify-between h-[49px]">
+                    <div class="navbar-logo flex items-center py-[9px]">
+                        <a href="#" id="homeLogo" class="flex">
+                            <img class="h-[32px] mr-[7px]" src="../assets/logo-header.webp" alt="logo-home">
+                        </a>
+                    </div>
+                    <div class="searchbar mr-4 ml-[29px] py-[4px]">
+                        <input class="bg-transparent border rounded-[3px] w-[264px] h-[42px] py-0 pl-9 pr-1" type="search" name="search" id="search" placeholder="Cari di Alodokter">
+                    </div>
+                </div>
+                <div class="top-navbar-right w-[830px] ml-[23px] flex justify-between items-center">
+                    <nav class="flex text-center gap-4 text-black text-[14px] font-alo font-normal">
+                        <a href="#">Info Kesehatan</a>
+                        <a href="#">Cari Dokter</a>
+                        <a href="#">Tanya Dokter</a>
+                        <a href="#">Langganan</a>
+                        <a href="#">Alodokter Shop</a>
+                    </nav>
+                    <div class="navbar-button flex">
+                        <div class="login-button">
+                            <div class="login bg-white border border-[#3570D2] rounded-[3px] px-[18px] py-[11px] text-[14px] text-[#3570D2]">
+                                Masuk
+                            </div>
+                        </div>
+                        <div class="download-button bg-[#3570D2] border border-[#3570D2] rounded-[3px] ml-[20px] px-[18px] py-[11px] text-white text-center text-[14px] ">
+                            <a href="#">Download Aplikasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- content -->
+    <div id="content" class="content">
+        <div class="content-inner">
+            <div class="container w-[1000px] h-auto mt-[100px] mx-[405px] mb-[100px]">
+                <div class="main-container w-[667px] pt-[45px]">
+                    <!-- chat -->
+                    <a href="#" class="fixed bottom-6 right-9 z-[100] cursor-pointer">
+                        <img src="../assets/chat-now.gif" alt="chat-now" class="w-[202px]">
+                    </a>
+                
+                    <!-- tittle and tag -->
+                    <div class="title-tag-container">
+                        <h1 id="post_title" class="w-[667px] mx-0 my-[10px] text-[#424242] text-[24px] font-alo font-bold">Diskusi Terkait</h1>
+                    </div>
+
+                    <!-- share button -->
+                    <div class="share-button flex flex-row gap-1 mt-[20px] text-center font-alo font-bold">    
+                        <div class="login bg-white w-[325px] border border-[#3570D2] rounded-[3px] px-[18px] py-[11px] text-[14px] text-[#3570D2]">
+                            Buat Pertanyaan
+                        </div>
+                        <div class="download-button bg-[#3570D2] w-[325px] border border-[#3570D2] rounded-[3px] ml-[20px] px-[18px] py-[11px] text-white text-center text-[14px] ">
+                            <a href="#">Cari Pertanyaan Berdasarkan Topik</a>
+                        </div>
+                    </div>
+
+                    <!-- topic list -->
+                   <div class="topic-list py-[50px]">
+                        
+                        <!-- topic card 1 -->
+                        <div class="related-topic-card border-b border-[#e0e0e0] pt-[20px] pb-[17px]">
+                            <div class="topic-info block float-right text-right text-[14px] font-alo font-normal">
+                                <div class="total-reply flex text-right text-[14px] font-alo font-normal">
+                                    <span class="text-[#3570D2] text-right">1 Balasan</span>
+                                    <img class="mt-[7px] ml-[10px] w-[11px] h-[11px]" src="../assets/msg.png" alt="balasan">
+                                </div>
+                                <div class="reply-time flex text-right text-[14px] font-alo font-normal">
+                                    <span class="text-right text-[#9e9e9e]">18 jam yang lalu</span>
+                                    <img class="mt-[7px] ml-[10px] w-[11px] h-[11px]" src="../assets/clock.png" alt="jam">
+                                </div>
+                            </div>
+                            <div class="topic-container inline-flex items-center mb-[23px] text-[#3B2728] text-[16px] font-alo font-bold">
+                                <a class="text-white mt-5" href="/komunitas/topic/anak-muntaber--gimana-cara-mengatasinya--dok-">
+                                    <div class="profile-avatar bg-[rgb(225,194,169)] rounded-full h-[56px] w-[56px] mx-auto p-0 text-[20px] text-center leading-[56px]">G</div>
+                                    <img class="profile-avatar-doctor border-white border-2  w-[40px] h-[40x] align-middle rounded-full relative mr-[32px] -top-[25px] left-[37px] text-center text-[20px] font-semibold leading-[56px]" alt="dr. Nadia Nurotul Fuadah" src="../assets/dr-nadia-nurotul-fuadah.jpg">
+                                </a>
+                                <div class="topic-title w-[350px] inline-block align-top ml-[16px]">
+                                    <p class="title text-[16px] font-alo font-bold">
+                                        <a href="/komunitas/topic/anak-muntaber--gimana-cara-mengatasinya--dok-">
+                                            Anak Muntaber, Gimana Cara Mengatasinya, Dok? 
+                                            <span class="notification hide"></span>
+                                        </a>
+                                    </p>
+                                    <div class="topic-by">
+                                        <a class="text-[14px] font-alo font-normal" href="/komunitas/topic/anak-muntaber--gimana-cara-mengatasinya--dok-">Oleh: Gu***a</a>
+                                    </div>
+                                    <div class="answer-by text-[#3570D2] text-[14px] font-alo font-normal">
+                                        <span>Dijawab oleh dr. Nadia Nurotul Fuadah</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="topic-detail w-[560px] text-[16px] text-[#3B3738] font-alo font-normal">
+                                <p>
+                                    <a href=""></a>
+                                </p>
+                                <div>Anak saya umur 3 tahun tiba-tiba muntah dan diare terus sejak pagi. Dia jadi lemas dan nggak mau makan. Ini muntaber,...</div>
+                            </div>
+                        </div>
+
+                        <!-- topic card 2 -->
+                        <div class="related-topic-card border-b border-[#e0e0e0] pt-[20px] pb-[17px]">
+                            <div class="topic-info block float-right text-right text-[14px] font-alo font-normal">
+                                <div class="total-reply flex text-right text-[14px] font-alo font-normal">
+                                    <span class="text-[#3570D2] text-right">1 Balasan</span>
+                                    <img class="mt-[7px] ml-[10px] w-[11px] h-[11px]" src="../assets/msg.png" alt="balasan">
+                                </div>
+                                <div class="reply-time flex text-right text-[14px] font-alo font-normal">
+                                    <span class="text-right text-[#9e9e9e]">5 hari yang lalu</span>
+                                    <img class="mt-[7px] ml-[10px] w-[11px] h-[11px]" src="../assets/clock.png" alt="jam">
+                                </div>
+                            </div>
+                            <div class="topic-container inline-flex items-center mb-[23px] text-[#3B2728] text-[16px] font-alo font-bold">
+                                <a class="text-white mt-5" href="/komunitas/topic/anak-muntaber--gimana-cara-mengatasinya--dok-">
+                                    <div class="profile-avatar bg-[rgb(240,181,192)] rounded-full h-[56px] w-[56px] mx-auto p-0 text-[20px] text-center leading-[56px]">E</div>
+                                    <img class="profile-avatar-doctor border-white border-2  w-[40px] h-[40x] align-middle rounded-full relative mr-[32px] -top-[25px] left-[37px] text-center text-[20px] font-semibold leading-[56px]" alt="dr. Nadia Nurotul Fuadah" src="../assets/riza_marlina.jpg">
+                                </a>
+                                <div class="topic-title w-[350px] inline-block align-top ml-[16px]">
+                                    <p class="title text-[16px] font-alo font-bold">
+                                        <a href="/komunitas/topic/anak-muntaber--gimana-cara-mengatasinya--dok-">
+                                            Perut sakit melilit seperti diremas dan mencret
+                                            <span class="notification hide"></span>
+                                        </a>
+                                    </p>
+                                    <div class="topic-by">
+                                        <a class="text-[14px] font-alo font-normal" href="/komunitas/topic/perut-sakit-melilit-seperti-diremas-dan-mencret">Oleh: Es****a</a>
+                                    </div>
+                                    <div class="answer-by text-[#3570D2] text-[14px] font-alo font-normal">
+                                        <span>Dijawab oleh dr. Riza Marlina</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="topic-detail w-[560px] text-[16px] text-[#3B3738] font-alo font-normal">
+                                <p>
+                                    <a href=""></a>
+                                </p>
+                                <div>Anak saya umur 3 tahun tiba-tiba muntah dan diare terus sejak pagi. Dia jadi lemas dan nggak mau makan. Ini muntaber,...</div>
+                            </div>
+                        </div>
+
+                   </div>
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- end content -->
+
+    <!-- footer -->
+    <div id="footer" class="footer bg-[#3570d2] h-auto text-white font-alo">
+        <div class="banner-footer bg-[linear-gradient(189deg,#6d97de,#1c4b9a)] shadow-[inset_25px_-26px_160px_#1c4b9a] h-[155px] pt-[24px] pb-[21px]">
+            <div class="container-footer flex flex-row justify-center gap-5">
+                <img class="w-[237px] -mt-[67px]" src="../assets/chat.png" alt="phone display chat">
+                <div class="text-banner">
+                    <div class="text-banner-3 text-[26px] font-alo font-semibold">Chat lebih dari 1.000 dokter di Aplikasi Alodokter!</div>
+                    <div class="text-banner-4 text-[24px] font-alo font-normal">Respons Cepat, Jawaban Akurat!</div>
+                    <div class="logo-kemenkes flex justify-end -mt-[20px]">
+                        <img class="w-[160px]" src="../assets/kemenkes.png" alt="logo kementrian kesehatan">
+                    </div>
+                </div>
+                <div class="downloadApp">
+                    <a href="#">
+                        <img class="w-[145px] mb-[10px]" src="../assets/googleplay.png" alt="google play">
+                    </a>
+                    <a href="#">
+                        <img class="w-[145px]" src="../assets/appstore.png" alt="google play">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer w-[1080px] mx-auto font-alo">
+            <div class="footer-inner pt-[36pt]">
+                <div class="footer-top flex flex-row border-b border-[#ffffff]">
+                    <div class="footer-data-item-about-us inline-block w-[330px] align-top text-[18px] mb-[30px]">
+                        <h4 class="m-0 text-[20px] font-bold">Alodokter</h4>
+                        <ul class="p-0 my-[14px] leading-8">
+                            <li>
+                                <a href="#">Tentang Kami</a></li>
+                            <li>
+                                <a href="https://www.kalibrr.id/c/alodokter/jobs">Karier</a></li>
+                            <li>
+                                <a href="#">Hubungi Kami</a></li>
+                            <li>
+                                <a href="#">Tim Editorial</a></li>
+                            <li>
+                            <a href="#">Langganan</a></li>
+                            <li>
+                            <a href="https://www.aloproteksi.com/">Aloproteksi Corporate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data-item-contact-us inline-block w-[330px] align-top text-[18px] mb-[30px]"">
+                        <h4 class="m-0 text-[20px] font-bold">Lainnya</h4>
+                        <ul class="p-0 my-[14px] leading-8">
+                            <li>
+                            <a href="#">Syarat &amp; Ketentuan</a></li>
+                            <li>
+                                <a href="#">Privasi</a></li>
+                            <li>
+                                <a href="#">Iklan</a></li>
+                            <li>
+                                <a href="#">Gabung di Tim Dokter</a></li>
+                            <li>
+                                <a href="#">Daftarkan Rumah Sakit Anda</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data-item-social-medi inline-block w-[330px] align-top text-[18px] mb-[30px]">
+                        <h4 class="m-0 text-[20px] font-bold">Media Sosial</h4>
+                        <div class="footer-row-social-media-list flex justify-between max-w-[260px] my-[14px] mb-[60px]">
+                            <a href="#" class="mr-[20px]">
+                                <img class="w-[35px]" src="../assets/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="mr-[20px]">
+                                <img class="w-[35px]" src="../assets/twitter.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="mr-[20px]">
+                                <img class="w-[35px]" src="../assets/linkedin.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="mr-[20px]">
+                                <img class="w-[35px]" src="../assets/instagram.svg" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img class="w-[35px]" src="../assets/youtube.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <p class="mt-[38px] mb-[10px] text-[16px] font-bold">
+                            Bagian dari Alodokter
+                        </p>
+                        <div class="alo-group block">
+                            <span class="mr-[23px]">
+                                <a href="#" class="mr-[25px]">alomedika.com</a>
+                            </span>
+                            <span>
+                                <a href="#">pobpad.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright py-4">
+                    <p>Hak Cipta © 2025 Alodokter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+</body>
+</html>

@@ -15,33 +15,35 @@
 <body class="mx-auto">
 
     <!-- navbar -->
-    <div class="top-navbar bg-transparent w-full h-20 fixed z-[100] text-sm py-4 px-8  top-0 left-1/2 transform -translate-x-1/2">
-        <div class="container-fluid w-[1238px] mx-auto p-0 block">
-            <div class="top-navbar-inner p-4 flex justify-between items-center">
-                <div class="top-navbar-left flex justify-between gap-0 w-[435px] h-[49px]">
-                    <div class="navbar-logo py-[10px]">
-                        <a href="#" id="homeLogo">
-                            <img class="w-[113px] h-[13px] mr-[7px]" src="../assets/logo.svg" alt="logo-home">
+    <div class="top-navbar bg-white border-b border-[#dadee4] w-full fixed px-8 py-[7px] top-0 left-1/2 z-[100]   text-sm transform -translate-x-1/2">
+        <div class="container-fluid w-[1340px] mx-auto p-0 block">
+            <div class="top-navbar-inner flex justify-between items-center">
+                <div class="top-navbar-left flex justify-between h-[49px]">
+                    <div class="navbar-logo flex items-center py-[9px]">
+                        <a href="#" id="homeLogo" class="flex">
+                            <img class="h-[32px] mr-[7px]" src="../assets/logo-header.webp" alt="logo-home">
                         </a>
                     </div>
-                    <div class="searchbar mr-4">
-                        <input class="bg-transparent border rounded-md placeholder-white h-11 w-15 pl-9 pt-1 pb-1 pr-1"  type="search" name="search" id="search" placeholder="Cari di Alodokter">
+                    <div class="searchbar mr-4 ml-[29px] py-[4px]">
+                        <input class="bg-transparent border rounded-[3px] w-[264px] h-[42px] py-0 pl-9 pr-1" type="search" name="search" id="search" placeholder="Cari di Alodokter">
                     </div>
                 </div>
-                <div class="top-navbar-right w-[830px] flex justify-between items-center">
-                    <nav class="flex text-center gap-7 text-white text-[14px] font-normal">
+                <div class="top-navbar-right w-[830px] ml-[23px] flex justify-between items-center">
+                    <nav class="flex text-center gap-4 text-black text-[14px] font-alo font-normal">
                         <a href="#">Info Kesehatan</a>
-                        <a href="#">Chat Dokter</a>
+                        <a href="#">Cari Dokter</a>
+                        <a href="#">Tanya Dokter</a>
                         <a href="#">Langganan</a>
-                        <a href="#">Aloshop</a>
-                        <a href="#">Alochoice</a>
+                        <a href="#">Alodokter Shop</a>
                     </nav>
-                    <div class="navbar-button flex gap-2">
+                    <div class="navbar-button flex">
                         <div class="login-button">
-                            <div class="login w-[160px] px-[15px] py-[11px] text-[14px] text-[#3570D2] font-bold rounded-xl border-white bg-white">Masuk / Daftar</div>
+                            <div class="login bg-white border border-[#3570D2] rounded-[3px] px-[18px] py-[11px] text-[14px] text-[#3570D2]">
+                                Masuk
+                            </div>
                         </div>
-                        <div class="download-button px-[15px] py-[11px] text-[14px] text-white font-bold rounded-xl bg-transparent border-white border-[1px]">
-                            <a href="#">Download Applikasi</a>
+                        <div class="download-button bg-[#3570D2] border border-[#3570D2] rounded-[3px] ml-[20px] px-[18px] py-[11px] text-white text-center text-[14px] ">
+                            <a href="#">Download Aplikasi</a>
                         </div>
                     </div>
                 </div>
@@ -52,77 +54,77 @@
 
 <!-- content -->
 <div id="content" class="content">
-    <div class="hero bg-[url('../assets/bg-banner.jpg')] text-[16px] font-normal">
-        <div class="container-hero text-white pt-[82px] relative mx-auto w-[1112px] min-h-[612px]">
-            <div class="hero-content-inner  pt-[91px] pb-[113px]">
-                <img src="../assets/doctor.png" alt="doctor" class="h-[495px] absolute bottom-0 -right-10">
-                <div class="hero banner content">
-                    <h1 class="font-alo font-bold text-[36px] mb-[12px]">Layanan Cepat dan Tepat</h1>
-                    <p class="font-alo font-normal text-[28px] mb-[52px] ">Layanan Booking dan Chat Dokter Terbaik di Indonesia</p>
-                </div>
-                <div class="hero-menu"></div>
-            </div>
-        </div>
-    </div>
-    <div class="subnav-center flex items-center justify-center mt-[50px]">
+    <div class="subnav-center bg-[#3570d2] h-[43px] mt-[64px] flex items-center justify-center ">
         <div class="container-subnav-center w-[1000px]">
-            <h2 class="text-[30px] text-[#424242] font-bold font-alo">Artikel Kesehatan Terkini untuk Anda</h2>
-            <div class="subnav-menu block mt-[20px] mb-[40px] h-[69px] border-t border-b border-[#dddddd]">
-                <ul class="list-none flex justify-between gap-6 m-0 p-0 text-[16px] text-[#424242] leading-[69px] font-alo font-normal">
-                    <li class="list-item" ><a class="" href="#">Nutrisi</a></li>
-                    <li><a href="#">Diabetes</a></li>
-                    <li><a href="#">Jantung</a></li>
-                    <li><a href="#">Kesehatan Mulut</a></li>
-                    <li><a href="#">Kolesterol Tinggi</a></li>
-                    <li><a href="#">Diet</a></li>
-                    <li><a href="#">Kecantikan</a></li>
-                    <li><a href="#">Kulit</a></li>
-                    <li><a href="#">Kehamilan</a></li>
-                    <li><a href="#">Bayi</a></li>
-                    <li><a href="#">Demam</a></li>
+            <div class="subnav-menu">
+                <ul class="list-none flex m-0 p-0 opacity-[0.7] text-[12px] text-white leading-[44px] font-alo font-normal">
+                    <li class="mr-[30px]" ><a class="" href="#">Nutrisi</a></li>
+                    <li class="mr-[30px]"><a href="#">Diabetes</a></li>
+                    <li class="mr-[30px]"><a href="#">Jantung</a></li>
+                    <li class="mr-[30px]"><a href="#">Kesehatan Mulut</a></li>
+                    <li class="mr-[30px]"><a href="#">Kolesterol Tinggi</a></li>
+                    <li class="mr-[30px]"><a href="#">Diet</a></li>
+                    <li class="mr-[30px]"><a href="#">Kecantikan</a></li>
+                    <li class="mr-[30px]"><a href="#">Kulit</a></li>
+                    <li class="mr-[30px]"><a href="#">Kehamilan</a></li>
+                    <li class="mr-[30px]"><a href="#">Bayi</a></li>
+                    <li class="mr-[30px]"><a href="#">Demam</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="content-inner">
-        <div class="container w-[1000px] h-[1250px] mx-[405px]">
-            <div class="main-container">
+        <div class="container w-[1000px] h-auto mx-[405px] mb-[100px]">
+            <div class="main-container w-[667px] pt-[45px]">
                 <!-- chat -->
                 <a href="#" class="fixed bottom-6 right-9 z-[100] cursor-pointer">
                     <img src="../assets/chat-now.gif" alt="chat-now" class="w-[202px]">
                 </a>
             
-
-
-                <!-- trending article -->
-                <div class="trending-article">
-                    <div class="trending-wrapper">
-                        <div class="trending-image">
-                            <a href="blog.html">
-                                <div class="tag-label absolute bg-[#F85B06] rounded-full w-[75.73px] h-[21px] m-[6px] px-[10px] text-white text-[12px] leading-[22px] font-alo">
-                                    Kesehatan
-                                </div>
-                            </a>
-                            <a href="#">
-                                <img class="w-[667px] h-[336px]" src="../assets/obat-diare-ampuh.jpg" alt="obat-diare-ampuh">
-                            </a>
-                        </div>
-                        <div class="trending-content mt-[17px]">
-                            <div>
-                                <a href="blog.html">
-                                    <h3 class="w-[667px] h-[21px] text-[#424242] text-[21px] font-alo font-bold">10 Obat Diare Ampuh</h3>
-                                </a>
-                                <p class="w-[667px] py-[16px] text-[#7f7f7f] font-alo">
-                                    Obat diare efektif menghentikan mencret yang sudah terjadi berkali-kali dan meredakan berbagai keluhan yang menyertainya. Obat ini dapat membuat buang...
-                                </p>
-                                <a href="blog.html" class="text-[#3670D2] text-sm font-alo font-bold">Baca Selengkapnya</a>
+                <!-- tittle and tag -->
+                <div class="title-tag-container">
+                    <div class="tag-label-container">
+                        <a href="#">
+                            <div class="tag-label bg-[#F85B06] rounded-full w-[75.73px] my-[6px] px-[10px] text-white text-[12px] leading-[22px] font-alo">
+                                Kesehatan
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <h1 id="post_title" class="w-[667px] mx-0 my-[10px] text-[#424242] text-[24px] font-alo font-bold">10 Obat Diare Ampuh</h1>
+                </div>
+
+                <!-- share button -->
+                <div class="share-button flex flex-row gap-2 mt-[20px]">    
+                    <img class="imgshare" data-share="fb" alt="facebook" src="../assets/fb.png">
+                    <img class="imgshare" data-share="tw" alt="twitter" src="../assets/twitter.png">
+                    <a href="mailto:?&amp;subject=10%20Obat%20Diare%20Ampuh%20-%20Alodokter&amp;body=Hey check this out: https%3A%2F%2Fwww.alodokter.com%2Fobat-diare-ampuh"><img class="imgshare" data-share="ml" alt="share to email" src="../assets/mail.png"></a>
+                </div>
+
+                <!-- post detail container -->
+                <div class="post-detail-container block relative mb-[25px] text-[#3b3738] text-justify font-normal leading-7">
+                    <div class="post-content">
+                        <p class="block mx-0 my-[10px]  text-[16px] font-alo font-normal">
+                            <strong>
+                                Obat diare efektif menghentikan mencret yang sudah terjadi berkali-kali dan meredakan berbagai keluhan yang menyertainya. Obat ini dapat membuat buang air besar tidak encer lagi sehingga Anda bisa beraktivitas kembali dengan nyaman. 
+                            </strong>
+                        </p>
+                        <p class="block mx-0 my-[10px]  text-[16px] font-alo font-normal">
+                            <a href="https://www.alodokter.com/diare" target="_blank" class="text-[#3570d2]">Diare</a> paling sering disebabkan oleh kuman yang terdapat dalam makanan maupun minuman tidak higienis. Diare juga bisa terjadi akibat <a href="https://www.alodokter.com/keracunan-makanan" target="_blank" class="text-[#3570d2]">keracunan makanan</a>, alergi makanan, atau <a href="https://www.alodokter.com/intoleransi-laktosa" target="_blank" class="text-[#3570d2]">intoleransi laktosa</a>. Penderita diare akan buang air besar (BAB) cair berulang kali sehingga harus bolak-balik ke kamar mandi.
+                        </p>
+                        <p class="block mx-0 my-[10px]  text-[16px] font-alo font-normal">
+                            <img class="w-[650px] h-auto" src="../assets/obat-diare-ampuh-0-alodokter.jpg" alt="10 Obat Diare Ampuh - Alodokter">
+                        </p>
+                        <p>
+                            Selain itu, mencret juga bisa disertai dengan mulas, kembung, sakit perut melilit, bahkan mual dan muntah. Kondisi ini bisa membuat badan lemah dan meningkatkan risiko terjadinya <a href="https://www.alodokter.com/dehidrasi" target="_blank" class="text-[#3570d2]">dehidrasi</a>. Oleh karena itu, diperlukan obat diare untuk mengatasi berbagai keluhan tersebut.
+                        </p>
+                        <h3 class="block mt-[32px] mb-0  text-[17px] text-[#3b3738] font-alo font-bold">
+                            <strong>Beragam Obat Diare yang Ampuh di Apotek</strong>
+                        </h3>
                     </div>
                 </div>
 
-                 <!-- card post 1 -->
-                 <div class="card-post-index mt-5">
+                <!-- card post 1 -->
+                <div class="card-post-index mt-5">
                     <div class="card-post-index-view flex flex-row gap-5">
                         <div class="card-image">
                             <div class="card-image-tag absolute bg-[#F85B06] rounded-full h-[25px] m-[6px] px-[8px] py-[2px] text-center text-white text-[10px] leading-[20px] font-alo">
@@ -197,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
